@@ -81,3 +81,27 @@ print('A média do '+nome+' foi de '+ str(media))
 print('A média do',nome,'foi de',media)
 #endregion
 
+#region Métodos de String
+
+exemplo = "Ctrl+Play - Escola de Programação e Robótica"
+
+#Coloca tudo em maiusculo
+print(exemplo.upper())
+
+#Coloca tudo minúsculo
+print(exemplo.lower())
+
+#Divide a string nos espaços em branco
+cadaPalavra = exemplo.split()
+print(cadaPalavra)
+print(cadaPalavra[2])
+
+#divide em um elemento específico (não inclui o elemento que foi dividido)
+cadaPalavra = exemplo.split('-')
+print(cadaPalavra)
+print(cadaPalavra[1])
+
+#endregion
+
+nome = input("Digite seu nome: ")
+print("\nOlá "+nome)
