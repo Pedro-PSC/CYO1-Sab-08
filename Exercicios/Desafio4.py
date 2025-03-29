@@ -27,7 +27,7 @@ elif n == 11:
 elif n == 12:
     print("December")
 else:
-    print("O número inserido não corresponde a um mês.")
+    print("O Valor inserido não corresponde a um mês.")
 #endregion
 '''
 print("\n")
