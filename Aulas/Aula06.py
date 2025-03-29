@@ -76,18 +76,24 @@ print(a,b,c,d,e)
 
 #region Dicionários
 
-# Um dicionário em Python é uma estrutura de dados que armazena pares de chave-valor. Ele permite acesso rápido aos valores a partir de suas respectivas chaves.
+# Um dicionário em é uma estrutura de dados que armazena pares de chave-valor. Ele permite acesso rápido aos valores a partir de suas respectivas chaves.
 
 # Criando um dicionário simples, use o simbolo de {} após declarar a variável. Um dicionário é uma coleção de pares chave-valor.
+print("\nDicionário\n")
+
 meu_dicionario = {
-    "nome": "João",  # "nome" é a chave, "João" é o valor
-    "idade": 25,     # "idade" é a chave, 25 é o valor
-    "cidade": "Belo Horizonte"  # "cidade" é a chave, "Belo Horizonte" é o valor
+    "nome": ["João","Pedro"],  # "nome" é a chave, "João" é o valor
+    "idade": [25],     # "idade" é a chave, 25 é o valor
+    "cidade": ["Belo Horizonte"],  # "cidade" é a chave, "Belo Horizonte" é o valor
 }
 
 # Acessando valores em um dicionário
 # Para acessar um valor, use a chave correspondente:
 print(meu_dicionario["nome"])  # Saída: João
+
+# Para adicionar acrescentar um valor novo a uma chave
+meu_dicionario["idade"].append("26")
+meu_dicionario["cidade"].append("Lagoa Santa")
 
 # Adicionando uma nova chave-valor ao dicionário
 meu_dicionario["profissao"] = "Engenheiro"
